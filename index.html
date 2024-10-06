@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LodaStar-Arnob Bro</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="design.css">
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+    <div class="container mx-auto p-6">
+        <header class="flex items-center justify-between">
+            <h1 class="text-3xl font-bold">Loda Star </h1>
+            <div class="text-yellow-400 font-semibold">Coins: <span id="coinCount">120</span></div>
+        </header>
+
+        <section class="mt-8 text-center">
+            <div class="relative w-40 h-40 mx-auto bg-gray-800 rounded-full">
+                <img src="img/copy-korli-credit-de-sala.jpg" alt="hamster"
+                    class="absolute inset-0 w-full h-full object-cover rounded-full">
+            </div>
+            <h2 class="mt-4 text-2xl font-bold">Arnob bro</h2>
+            <div class="mt-4">
+                <span class="text-blue-500">1000</span>/<span class="text-gray-500">1000</span> Energy
+            </div>
+        </section>
+
+        <div class="text-center mt-8">
+            <button id="earnCoins"
+                class="bg-pink-500 px-6 py-3 rounded-lg shadow-lg hover:bg-fuchsia-700 transition">Test Your
+                Luck!</button>
+            <p class="text-sm mt-2 text-gray-400">Click 5 times for 1 coin or 10 times for a surprise!</p>
+        </div>
+        <section class="mt-12 grid grid-cols-2 gap-4">
+            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                <h3 class="text-lg font-semibold">Daily Reward</h3>
+                <p class="text-sm mt-2">Collect in: <span id="rewardTime">11:15</span></p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                <h3 class="text-lg font-semibold">Daily Cipher</h3>
+                <p class="text-sm mt-2">Unlock in: <span id="cipherTime">06:15</span></p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                <h3 class="text-lg font-semibold">Daily Combo</h3>
+                <p class="text-sm mt-2">Ready in: <span id="comboTime">23:15</span></p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg text-center">
+                <h3 class="text-lg font-semibold">Mini Game</h3>
+                <p class="text-sm mt-2">Available in: <span id="miniGameTime">07:15</span></p>
+            </div>
+        </section>
+
+        <footer class="mt-12 flex justify-around bg-gray-800 p-4 rounded-lg">
+            <button class="text-sm text-yellow-500">Exchange</button>
+            <button class="text-sm text-gray-500">Friends</button>
+            <button class="text-sm text-gray-500">Earn</button>
+            <button class="text-sm text-yellow-500">Airdrop</button>
+        </footer>
+    </div>
+
+    <div id="customAlert"
+        class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-yellow-500 text-white text-lg font-bold p-6 rounded-lg shadow-lg z-50">
+        <p id="alertMessage"></p>
+        <button id="closeAlert"
+            class="mt-4 bg-white text-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-300">OK</button>
+    </div>
+<div id="copyright"></div>
+
+<script src="arnobbro.js"> </script>
+
+</body>
+
+</html>
